@@ -55,7 +55,14 @@
 .filter-list .dropdown {
   margin-bottom: 10px;
 }
-
+.increment-button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .dropdown button {
   background-color: #61dafb;
   color: white;
@@ -82,4 +89,15 @@
 
 .dropdown .dropdown-item:hover {
   background-color: #e9ecef;
+}
+.items-table td:first-child {
+  text-align: left;
+  width: 80px;
+}
+.items-table td:nth-child(2) {
+  text-align: right;
+}
+
+.items-table th:nth-child(2) {
+  text-align: right;
 }

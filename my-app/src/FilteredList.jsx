@@ -7,7 +7,7 @@ class FilteredList extends Component {
 
     this.state = {
       search: "",
-      type: "All" // Added state variable for type
+      type: "All"
     };
   }
 
@@ -16,11 +16,11 @@ class FilteredList extends Component {
   }
 
   onFilter = (eventKey, event) => {
-    this.setState({type: eventKey}); // Set state of type based on selected option
+    this.setState({type: eventKey});
   }
 
   filterItem = (item) => {
-    // Check if the item has a name property and it's not undefined
+    
     if (!item.name) {
       return false;
     }
@@ -54,7 +54,7 @@ class FilteredList extends Component {
             <tr>
               <th>Name</th>
               <th>Type</th>
-              {/* Add other column headers if needed */}
+              
             </tr>
           </thead>
           <tbody>
@@ -62,7 +62,7 @@ class FilteredList extends Component {
               <tr key={index}>
                 <td>{item.name}</td>
                 <td>{item.type}</td>
-                {/* Add other item details if needed */}
+                
               </tr>
             ))}
           </tbody>
